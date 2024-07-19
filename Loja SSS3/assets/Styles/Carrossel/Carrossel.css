@@ -1,0 +1,85 @@
+/* Estilos para o contêiner do carrossel de texto */
+.text-carousel {
+    position: relative; /* Posição relativa para posicionamento absoluto dos itens */
+    width: 100%; /* Largura total do contêiner */
+    max-width: 100%; /* Largura máxima igual à largura total */
+    margin: 0 auto 2rem auto; /* Margens superior e inferior automáticas, e laterais automáticas */
+    overflow: hidden; /* Esconde conteúdo que ultrapassa os limites do contêiner */
+    border-radius: 10px; /* Bordas arredondadas */
+    background-image: url('https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=400&w=800'); /* Imagem de fundo do carrossel */
+    background-size: cover; /* Cobrir toda a área do contêiner */
+    background-position: center; /* Centralizar a imagem de fundo */
+    color: white; /* Cor do texto dentro do carrossel */
+    padding: 7rem; /* Espaçamento interno generoso */
+}
+
+/* Estilos para o conteúdo do carrossel */
+.text-carousel-content {
+    position: relative; /* Posição relativa para posicionamento absoluto dos itens */
+    display: flex; /* Exibir os itens em linha */
+    transition: transform 0.5s ease-in-out; /* Transição suave ao alterar a posição dos itens */
+    width: 100%; /* Largura total */
+}
+
+/* Estilos para cada item do carrossel */
+.text-carousel-item {
+    min-width: 100%; /* Largura mínima igual à largura total */
+    box-sizing: border-box; /* A largura e altura incluem preenchimento e borda */
+    opacity: 0; /* Inicia invisível */
+    transform: translateX(-100%); /* Fora da tela inicialmente */
+    transition: opacity 0.5s, transform 0.5s; /* Transições de opacidade e transformação */
+    padding: 2rem; /* Espaçamento interno */
+    background: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    border-radius: 10px; /* Bordas arredondadas */
+    position: absolute; /* Posicionamento absoluto dentro do contêiner */
+    top: 0; /* Alinhar ao topo */
+    left: 0; /* Alinhar à esquerda */
+}
+
+/* Estilos para o item ativo do carrossel */
+.text-carousel-item.active {
+    opacity: 1; /* Torna visível */
+    transform: translateX(0); /* Movimento para a posição inicial */
+    position: relative; /* Volta ao fluxo normal do documento */
+}
+
+/* Estilos para os controles do carrossel */
+.text-carousel-controls {
+    position: absolute; /* Posição absoluta para controle sobre o conteúdo */
+    top: 50%; /* Alinhamento vertical ao centro */
+    width: 100%; /* Largura total */
+    display: flex; /* Exibir os controles em linha */
+    justify-content: space-between; /* Espaço entre os controles */
+    transform: translateY(-50%); /* Ajuste fino para centralizar verticalmente */
+}
+
+/* Estilos para cada controle do carrossel */
+.text-carousel-control {
+    background-color: rgba(51, 51, 51, 0.8); /* Cor de fundo semitransparente */
+    border: none; /* Sem borda */
+    color: white; /* Cor do ícone */
+    padding: 0.5rem; /* Espaçamento interno */
+    cursor: pointer; /* Cursor ao passar */
+}
+
+/* Estilos para os indicadores do carrossel */
+.text-carousel-indicators {
+    display: flex; /* Exibir os indicadores em linha */
+    justify-content: center; /* Centralizar horizontalmente */
+    margin-top: 1rem; /* Margem superior */
+}
+
+/* Estilos para cada indicador do carrossel */
+.text-carousel-indicator {
+    width: 10px; /* Largura do indicador */
+    height: 10px; /* Altura do indicador */
+    background-color: #ccc; /* Cor de fundo padrão */
+    border-radius: 50%; /* Forma arredondada */
+    margin: 0 5px; /* Margem entre os indicadores */
+    cursor: pointer; /* Cursor ao passar */
+}
+
+/* Estilos para o indicador ativo do carrossel */
+.text-carousel-indicator.active {
+    background-color: #333; /* Cor de fundo para o indicador ativo */
+}

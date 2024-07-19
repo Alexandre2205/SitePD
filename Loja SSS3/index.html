@@ -1,124 +1,308 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja de Segurança</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <!-- Links para estilos e scripts externos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/Styles/Home/styles.css">
+    <link rel="stylesheet" href="assets/Styles/Carrossel/Carrossel.css">
+    <link rel="stylesheet" href="assets/Styles/Faq/FaQ.css">
+    <!-- Scripts deferidos para carregamento assíncrono -->
+    <script src="assets/Styles/Home/script.js" defer></script>
+    <script src="assets/Styles/Carrossel/Carrossel.js" defer></script>
 </head>
+
 <body>
     <header>
-        <h1>Anizio Tomaz Lacerda Segurança</h1>
+        <!-- Cabeçalho com título e menu de navegação -->
         <nav>
             <div class="logo">
-                <a href="assets/imgs/Logo/image (4).png"><img src="assets/imgs/Logo/image (4).png" width="200px"  alt=""></a>
+                <!-- Logo da empresa com link para a home -->
+                <a href="assets/imgs/Logo/logo.jpeg"><img src="assets/imgs/Logo/logo.jpeg" width="100px" alt=""></a>
             </div>
+            <!-- Lista de links de navegação -->
             <ul class="nav-links">
-                <li><a href="#logo"><i class="fas fa-home"></i> Início</a></li>
-                <li><a href="#"><i class="fas fa-info-circle"></i> Sobre</a></li>
+                <li><a href="#home"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="#text"><i class="fas fa-info-circle"></i> Sobre</a></li>
                 <li><a href="#rodape"><i class="fas fa-envelope"></i> Contato</a></li>
-                <li><a href=""><i class="fas fa-blog"></i> Blog</a></li>
             </ul>
+            <!-- Ícone de menu hamburger para dispositivos móveis -->
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
         </nav>
-    </header><br><br>
+    </header>
+    <main>
+        <!-- Banner principal da página -->
+        <div id="home" class="banner">
+            <img src="assets/imgs/Banner/banner.jpg" alt="Banner de Promoção">
+            <div class="banner-texto">
+                <h1>Bem-vindo à Nossa Loja</h1>
+                <p>Confira nossas ofertas exclusivas!</p>
+            </div>
+        </div><br><br>
 
-    <main id="blog">
-        <section id="text"> <div>
-            <P>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, ducimus! Recusandae tempore autem excepturi optio, nulla, rem delectus modi facere aliquid vitae veritatis fugiat, earum iste omnis! Voluptatem, perferendis iste?
-            </P><br>
-    
-            <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia ea magni repellendus voluptatibus nobis sequi, optio, modi fugit laboriosam, incidunt nisi voluptate earum ratione exercitationem quam eum blanditiis odio asperiores.</P><br>
-
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem odit molestias repellendus velit labore libero eveniet unde. Minima neque nulla veritatis iste impedit eos iusto, debitis iure nostrum labore! Id.</P>
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quod alias quisquam explicabo cumque nam natus minima iusto distinctio dolore! Corrupti alias aspernatur quis quam tempore culpa, quos sint aliquam?</P>
-            <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus eum pariatur perspiciatis possimus, culpa rem ea provident iure quisquam fuga, dolorum dolore veniam nemo recusandae ipsam, quidem amet dolores! Nihil.</P>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nulla possimus neque rem consectetur amet. Commodi accusantium ipsum eaque sit nisi tempora et illum! Officiis et nemo itaque odit iusto.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia est ab, sit, similique harum molestias nesciunt officiis error odio rem saepe. Alias culpa repellendus laboriosam quam reprehenderit. Sint, corporis distinctio.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat excepturi repellendus, omnis sunt nesciunt earum itaque! Dolorum voluptates expedita odit nostrum necessitatibus assumenda. Molestiae ex sequi blanditiis autem, voluptas eum?</p>
+        <!-- Carrossel de apresentações de texto -->
+        <div class="text-carousel">
+            <div class="text-carousel-content">
+                <div class="text-carousel-item active">
+                    <h2>Título do Slide 1</h2>
+                    <img src="" width="200px" alt="">
+                    <p>Conteúdo do slide 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="text-carousel-item">
+                    <h2>Título do Slide 2</h2>
+                    <p>Conteúdo do slide 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="text-carousel-item">
+                    <h2>Título do Slide 3</h2>
+                    <p>Conteúdo do slide 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <!-- Controles e indicadores do carrossel -->
+            <div class="text-carousel-controls">
+                <button class="text-carousel-control prev">&lt;</button>
+                <button class="text-carousel-control next">&gt;</button>
+            </div>
+            <div class="text-carousel-indicators">
+                <div class="text-carousel-indicator active"></div>
+                <div class="text-carousel-indicator"></div>
+                <div class="text-carousel-indicator"></div>
+            </div>
         </div>
-       </section>
 
+        <!-- Seção de texto principal -->
+        <section id="text">
+            <!-- Parágrafos com texto descritivo -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, ducimus! Recusandae tempore autem
+                excepturi optio, nulla, rem delectus modi facere aliquid vitae veritatis fugiat, earum iste omnis!
+                Voluptatem, perferendis iste?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aut excepturi illo quod exercitationem.
+                Quas omnis expedita eius dolor aspernatur tempora? Architecto quam facere quisquam tempore aut eum magni
+                ullam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quis consequatur eius minima voluptates
+                inventore, esse at in a, rem maxime nesciunt nihil maiores enim neque possimus ducimus, tempora
+                deleniti!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, ad nisi rerum repudiandae optio dolorem
+                harum magnam unde aliquid incidunt sint distinctio odio. Quam dolores voluptatum iste nihil, blanditiis
+                repudiandae.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam reprehenderit optio sequi commodi
+                nostrum rem consequuntur officia expedita, a dolor nobis aut ipsa eos repellat omnis, cumque recusandae.
+                Nam, impedit.lo</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit ut mollitia soluta adipisci ad
+                assumenda placeat quam. Voluptate hic reprehenderit quae nobis cupiditate molestiae suscipit, blanditiis
+                odio. Maxime, recusandae consequuntur?</p>
+            <!-- Adicione mais parágrafos conforme necessário -->
+        </section>
+
+        <!-- Seções de vídeos -->
+        <div id="vid">
+            <section id="video iframe">
+                <h1>Veja um pouco de como funciona nosso serviço </h1>
+                <p>Vemos aqui algumas funções de cameras ja instaladas : Witson CMS CCTV ao vivo 6 locais remotos 33 câmeras no total - Modo noturno</p>
+                <!-- Vídeo incorporado do YouTube -->
+                <iframe width="914" height="514"
+                    src="https://www.youtube.com/embed/ffu93KhnSKg?si=-Jhp6yJ85t0sLyF-&amp;start=1"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+
+            <section id="video iframe">
+                <h1>Veja um pouco de como funciona nosso serviço </h1>
+                <p>Motor para portão PPA Dz Home Jetflex 4 segundos</p>
+                <!-- Vídeo incorporado do YouTube -->
+                <iframe width="914" height="514" src="https://www.youtube.com/embed/4bp9rxqVZHg"
+                    title="Motor para portão PPA Dz Home Jetflex 4 segundos" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+
+
+            <section id="video iframe">
+                <h1>Veja um pouco de como funciona nosso serviço </h1>
+                <p>Linha de Sensores com imunidade pet e muito mais (IVP 1000 PET)</p>
+                <!-- Vídeo incorporado do YouTube -->
+                <iframe width="914" height="514" src="https://www.youtube.com/embed/JgNEiWeXz-Y"
+                    title="Linha de Sensores com imunidade pet e muito mais (IVP 1000 PET)" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+
+            <section id="video iframe">
+                <h1>Veja um pouco de como funciona nosso serviço </h1>
+                <p>Descubra tudo o que a linha Mibo Cam pode te oferecer!</p>
+                <!-- Vídeo incorporado do YouTube -->
+                <iframe width="914" height="514" src="https://www.youtube.com/embed/AQExv4xXEWY"
+                    title="Descubra tudo o que a linha Mibo Cam pode te oferecer!" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+
+            <section id="video iframe">
+                <h1>Veja um pouco de como funciona nosso serviço </h1>
+                <p>Sistema de alarme sem fio JFL</p>
+                <!-- Vídeo incorporado do YouTube -->
+                <iframe width="914" height="514" src="https://www.youtube.com/embed/yVhmHcpVZHM"
+                    title="Sistema de alarme sem fio JFL" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+
+            <section id="video iframe">
+                <h1>Veja um pouco de como funciona nosso serviço </h1>
+                <p>Conheça as novas funções das centrais coletivas interligáveis Intelbras</p>
+                <!-- Vídeo incorporado do YouTube -->
+                <iframe width="914" height="514" src="https://www.youtube.com/embed/SDcD66hUtXA"
+                    title="Conheça as novas funções das centrais coletivas interligáveis Intelbras" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+        </div>
+        <!-- Galeria de produtos -->
         <section id="galeria">
-            <h2>Galeria de Produtos</h2>
+            <h2>Produtos</h2>
+            <!-- Slider de produtos -->
             <div class="slider">
                 <div class="slides">
+                    <!-- Slides individuais com produtos -->
                     <div class="slide product">
-                        <img src="assets/imgs/produtos/camera/camera-1124585_1280.jpg" alt="Câmera de Segurança 1">
+                        <img src="assets/imgs/Cameras/cameraHD.jpg" width="200px" alt="Câmera de Segurança 1">
                         <h3>Câmera de Segurança HD</h3>
                         <button onclick="requestQuote('Câmera de Segurança HD')">Solicitar Orçamento</button>
                     </div>
                     <div class="slide product">
-                        <img src="assets/imgs/produtos/camera/cctv-surveillance-camera-7267551_1280.jpg" alt="Câmera de Segurança 2">
+                        <img src="assets/imgs/Cameras/cameranoturna.jpg" width="300px" alt="Câmera de Segurança 2">
                         <h3>Câmera de Segurança Noturna</h3>
                         <button onclick="requestQuote('Câmera de Segurança Noturna')">Solicitar Orçamento</button>
                     </div>
                     <div class="slide product">
-                        <img src="assets/imgs/produtos/alarmes/download.jpeg" alt="Alarme 1">
+                        <img src="assets/imgs/Alarmes/Central de Alarme.png" alt="Alarme 1">
                         <h3>Alarme Residencial</h3>
                         <button onclick="requestQuote('Alarme Residencial')">Solicitar Orçamento</button>
                     </div>
                     <div class="slide product">
-                        <img src="assets/imgs/produtos/alarmes/download (1).jpeg" alt="Alarme 2">
+                        <img src="assets/imgs/Alarmes/sensor de presença.png" alt="Alarme 2">
                         <h3>Alarme Comercial</h3>
                         <button onclick="requestQuote('Alarme Comercial')">Solicitar Orçamento</button>
                     </div>
                     <div class="slide product">
-                        <img src="assets/imgs/produtos/cerca eletrica/pexels-markusspiske-2004164 .jpg" alt="Cerca Elétrica 1">
+                        <img src="assets/imgs/Controle de acesso/CONTROLADORA FACIAL ID FACE.png" width="200px"
+                            alt="Controle de acesso">
+                        <h3>Controle de acesso</h3>
+                        <button onclick="requestQuote('Cerca Elétrica Residencial')">Solicitar Orçamento</button>
+                    </div>
+                    <div class="slide product">
+                        <img src="assets/imgs/Cerca eletricas/cerca eletrica residencial.jpeg" width="200px"
+                            alt="Cerca Elétrica 1">
                         <h3>Cerca Elétrica Residencial</h3>
                         <button onclick="requestQuote('Cerca Elétrica Residencial')">Solicitar Orçamento</button>
                     </div>
                     <div class="slide product">
-                        <img src="assets/imgs/produtos/cerca eletrica/pexels-enric-cruz-lopez-9989522 .jpg" alt="Cerca Elétrica 2">
+                        <img src="assets/imgs/Cerca eletricas/cerca elktrica comercial.jpg"
+                            width="200px" alt="Cerca Elétrica 2">
                         <h3>Cerca Elétrica Comercial</h3>
                         <button onclick="requestQuote('Cerca Elétrica Comercial')">Solicitar Orçamento</button>
                     </div>
+
+                    <!-- Adicione mais slides conforme necessário -->
                 </div>
+                <!-- Botões de navegação para a galeria de produtos -->
                 <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
                 <button class="next" onclick="changeSlide(1)">&#10095;</button>
             </div>
         </section>
+
+        <!-- Seção de Perguntas Frequentes (FaQ) -->
+        <section id="FaQ">
+            <div class="faq-container">
+                <!-- Itens de perguntas frequentes -->
+                <div class="faq-item">
+                    <h3 class="faq-question">O que são câmeras de segurança e como funcionam?</h3>
+                    <p class="faq-answer">As câmeras de segurança são dispositivos usados para monitorar e gravar atividades em áreas específicas. Elas funcionam capturando imagens e vídeos, que podem ser visualizados em tempo real ou gravados para revisão posterior. As câmeras podem ser instaladas em ambientes internos ou externos e são uma ferramenta essencial para garantir a segurança de residências e empresas.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Como posso contratar a instalação de um sistema de alarme de segurança?</h3>
+                    <p class="faq-answer">Para contratar a instalação de um sistema de alarme de segurança, você pode entrar em contato conosco através do nosso site ou telefone. Nossa equipe de especialistas agendará uma visita para avaliar suas necessidades específicas e fornecer um orçamento personalizado. Nós cuidamos de todo o processo de instalação e oferecemos suporte contínuo para garantir que seu sistema funcione perfeitamente.</p>
+                </div>
+                <!-- Adicione mais itens conforme necessário -->
+            </div>
+            <!-- Link para página completa de FAQ -->
+            <a id="ver-mais" href="assets/Styles/Faq/faq-complete.html"><strong>Ver mais</strong></a>
+            <!-- Script para funcionalidades de FAQ -->
+            <script src="assets/Styles/Faq/FaQ.js"></script>
+        </section>
+
+        <!-- Formulário de Contato -->
         <section id="contato">
             <h2>Contato</h2>
+            <!-- Formulário de contato -->
             <form id="contact-form" onsubmit="submitForm(event)">
                 <label for="name">Nome:</label>
                 <input type="text" id="name" name="name" required>
-    
+
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-    
+
                 <label for="message">Mensagem:</label>
                 <textarea id="message" name="message" required></textarea>
-    
+
                 <button type="submit">Enviar</button>
             </form>
         </section>
-        <script src="scripts.js"></script>
     </main>
 
-    <div>
-        <footer id="rodape">
-            <div class="social">
-                <ul>
-                    <li><a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram" id="instagram"></i></a></li>
-                    <li><a href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin"  id="linkedin"></i></a></li>
-                    <li><a href="https://www.youtube.com" target="_blank"><i class="bi bi-youtube" id="youtube"></i></a></li>
-                    <li><a href="https://www.whatsapp.com" target="_blank"><i class="bi bi-whatsapp" id="whatsapp"></i></a></li>
+    <!-- Rodapé da página com links sociais e informações de copyright -->
+    <footer id="rodape">
+        <div>
+            <a class="logo" href="assets/imgs/Logo/logo2.jpg"><img src="assets/imgs/Logo/logo2.jpg" width="100px" alt="logo2"></a>
+            <p>Contato Email: anizio.lacerda@yahoo.com.br</p><br>
+            <p>Telefone: (31) 9 9708-6308</p>
+        </div>
+        <div class="footer-container">
+            <div class="footer-block-left">
+                <ul class="cont">
+                    <li>Anizio Tomaz Lacerda Segurança;</li>
+                    <li>CNPJ: 22627466000154;</li>
+                    <li>Localização: R. Cristal, 238;</li>
+                    <li>Bairro: Major Lage de Baixo;</li>
+                    <li>CEP: 35900-221;</li>
+                    <li>Itabira, MG.</li>
                 </ul>
             </div>
-            <div class="images">
-                <img src="" alt="" width="100%">
-                </div>
-            <p>Site desenvolvido por Rafael Martins Almeida, Alexandre Ferreira e Marcos Sousa Ferreira &copy; 2024 - Última atualização em junho de 2024.</p>
-        </footer>
-    </div>
+            <div class="footer-block-right">
+                <div class="social">
+                    <ul>
+                        <!-- Links para redes sociais usando ícones do Bootstrap Icons -->
+                         
+                        <!-- Caso algum dia prescisar
+                        <li><a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"
+                                    id="instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin"
+                                    id="linkedin"></i></a></li> -->
+                        <li><a href="https://www.youtube.com" target="_blank"><i class="bi bi-youtube"
+                                    id="youtube"></i></a></li>
+                        <li><a href="https://wa.me/message/6GORYHNEROUJL1" target="_blank"><i class="bi bi-whatsapp"
+                                    id="whatsapp"></i></a></li>
+                    </ul>
+                </div><br>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <!-- Informação de direitos autorais e desenvolvedores do site -->
+            <p>Anizio Tomaz Lacerda Segurança - Site desenvolvido por Rafael Martins Almeida, Alexandre Ferreira Santos
+                e Marcos Sousa Ferreira - Última atualização em junho de 2024. <br>
+                &copy;Todos os Direitos Reservados - 2024
+            </p>
+        </div>
+    </footer>
 </body>
+</body>
+
 </html>
