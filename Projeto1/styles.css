@@ -1,0 +1,99 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    background-color: #ccc;
+}
+
+header h1 {
+    font-size: 48px;
+    color: #E74C3C; /* Vermelho */
+    font-family: 'Impact';
+
+}
+
+header h2 {
+    font-size: 24px;
+    color: #000;
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #999;
+}
+
+nav ul li {
+    margin: 2px 30px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #000;
+    text-decoration: none;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    background-color: #fff;
+    /*border: 2px solid #000;*/
+    font-weight: bold;
+}
+
+/* Conteúdo principal */
+main {
+    margin: 20px auto;
+    max-width: 900px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sobre-nos, .valores {
+    margin-bottom: 20px;
+}
+
+.sobre-nos h3, .valores h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+footer {
+    text-align: right;
+    padding: 10px;
+}
+
+.robot-img {
+    width: 120px;
+    margin-right: 20px;
+}
+/* Adicionar para esconder as seções não ativas */
+.content-section {
+    display: none; /* Esconde por padrão */
+}
+
+.content-section.active {
+    display: block; /* Mostra a seção ativa */
+}
