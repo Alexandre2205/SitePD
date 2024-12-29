@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Define o conjunto de caracteres para UTF-8, garantindo compatibilidade com acentos e caracteres especiais -->
+    <meta charset="UTF-8">
+    <!-- Configura a viewport para tornar o site responsivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define o título da página -->
+    <title>ATL - Segurança Eletrônica e Automação</title>
+    <!-- Inclui ícones do Bootstrap para uso no site -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Link para o arquivo de estilos principal da página inicial -->
+    <link rel="stylesheet" href="assets/Home/styles.css">
+    <!-- Link para o arquivo de estilos específico da seção de FAQ -->
+    <link rel="stylesheet" href="assets/Faq/FaQ.css">
+</head>
+<body>
+    <!-- Cabeçalho principal com título e subtítulo -->
+    <header>
+        <h1><strong>ATL</strong></h1>
+        <h2>Segurança Eletrônica e Automação</h2>
+    </header>
+
+    <!-- Navegação principal do site -->
+    <nav>
+        <ul>
+            <!-- Links do menu, com funções de navegação por seção usando `onclick` -->
+            <li><a href="#home" onclick="showSection('home')" class="active">Home</a></li>
+            <li><a href="#produtos" onclick="showSection('produtos')">Produtos</a></li>
+            <li><a href="#servicos" onclick="showSection('servicos')">Serviços</a></li>
+            <li><a href="#contato" onclick="showSection('contato')">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Seção inicial sobre a empresa -->
+        <section id="home">
+            <div class="card">
+                <h2>Sobre nós</h2>
+                <p><strong>Nossa empresa</strong> atua no mercado há mais de 17 anos, com ampla experiência no setor.</p>
+            </div>
+            <div class="card">
+                <h2>Missão</h2>
+                <p><strong>Missão:</strong> Proteger pessoas e bens com soluções inovadoras e tecnologia avançada.</p>
+            </div>
+        </section>
+    
+        <!-- Seção sobre produtos oferecidos -->
+        <section id="produtos" class="hidden">
+            <div class="card">
+                <h2>Produtos</h2>
+                <p><strong>CFTV (Circuito Fechado de TV)</strong></p>
+                <ul>
+                    <!-- Lista de produtos relacionados a CFTV -->
+                    <li>DVRs - Gravadores</li>
+                    <li>Marcas: Intelbras, Hikvision e Hiseeu</li>
+                    <li>Opções de câmeras de 4, 8, 16 e 32 canais</li>
+                    <li>Compatibilidade com aplicativos móveis</li>
+                    <a href="assets/img/cameraHD.jpg"><img src="assets/img/cameraHD.jpg" width="100px" alt=""></a>
+                    <a href="assets/img/Camera.png"><img src="assets/img/Camera.png" width="100px" alt=""></a>
+                    <a href="assets/img/cameranoturna.jpg"><img src="assets/img/cameranoturna.jpg" width="100px" alt=""></a>
+                    <a href=""><img src="" width="100px" alt=""></a>
+                </ul>
+            </div>
+        </section>
+    
+        <!-- Seção detalhando os serviços oferecidos -->
+        <section id="servicos" class="hidden">
+            <div class="card">
+                <h2>Serviços</h2>
+                <p><strong>Instalação e Manutenção</strong></p>
+                <p>Oferecemos serviços de instalação e manutenção de todos os nossos produtos.</p>
+                <p><strong>Manutenção Preventiva:</strong></p>
+                <p>Serviço de contrato mensal para verificar e prevenir falhas nos equipamentos.</p>
+            </div>
+        </section>
+    
+        <!-- Seção para informações de contato -->
+        <section id="contato" class="hidden">
+            <div class="card">
+                <h2>Contato</h2>
+                <p>Entre em contato conosco via:</p>
+                <ul>
+                    <!-- Links para WhatsApp e YouTube com ícones -->
+                    <li><a href="https://wa.me/5545987432180" target="_blank">
+                        <img src="https://img.icons8.com/color/48/whatsapp--v1.png" class="icon" width="80px" alt="WhatsApp">WhatsApp</a>
+                    </li>
+                    <li><a href="https://youtube.com" target="_blank">
+                        <img src="https://img.icons8.com/color/48/youtube--v1.png" class="icon" width="80px" alt="YouTube">YouTube</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Imagem do mascote -->
+        <div>
+            <img src="assets/img/robot.png" alt="Mascote robô" class="robot-img">
+        </div>
+       
+        <!-- Seção de perguntas frequentes -->
+        <section id="FaQ">
+            <div class="faq-container">
+                <!-- Cada item representa uma pergunta frequente -->
+                <div class="faq-item">
+                    <h3 class="faq-question">O que são câmeras de segurança e como funcionam?</h3>
+                    <p class="faq-answer">As câmeras de segurança são dispositivos usados para monitorar e gravar atividades em áreas específicas. Elas funcionam capturando imagens e vídeos, que podem ser visualizados em tempo real ou gravados para revisão posterior. As câmeras podem ser instaladas em ambientes internos ou externos e são uma ferramenta essencial para garantir a segurança de residências e empresas.</p>    
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Como posso contratar a instalação de um sistema de alarme de segurança?</h3>
+                    <p class="faq-answer">Para contratar a instalação de um sistema de alarme de segurança, você pode entrar em contato conosco através do nosso site ou telefone. Nossa equipe de especialistas agendará uma visita para avaliar suas necessidades específicas e fornecer um orçamento personalizado. Nós cuidamos de todo o processo de instalação e oferecemos suporte contínuo para garantir que seu sistema funcione perfeitamente.</p>
+                </div>
+            </div>
+            <!-- Link para uma página completa de FAQ -->
+            <a id="ver-mais" href="assets/Faq/faq-complete.html"><strong>Ver mais</strong></a>
+            <!-- Script específico para a funcionalidade da FAQ -->
+            <script src="assets/Faq/FaQ.js"></script>
+        </section>
+    </main>
+
+    <!-- Rodapé com informações de contato e links sociais -->
+    <footer id="rodape">
+        <div>
+            <a class="logo" href="assets/img/logo2.jpg">
+                <img src="assets/img/logo2.jpg" width="100px" alt="logo2">
+            </a>
+        </div>
+        <div class="footer-container">
+            <!-- Bloco com informações da empresa -->
+            <div class="footer-block-left">
+                <ul class="cont">
+                    <li>Anizio Tomaz Lacerda Segurança</li>
+                    <li>Telefone: (31) 9 9708-6308</li>
+                    <li>CNPJ: 22.627.466/0001-54</li>
+                </ul>
+            </div>
+            <!-- Bloco com links para redes sociais -->
+            <div class="footer-block-right">
+                <div class="social">
+                    <ul>
+                        <li><a href="https://www.youtube.com" target="_blank"><i class="bi bi-youtube" id="youtube"></i></a></li>
+                        <li><a href="https://wa.me/message/6GORYHNEROUJL1" target="_blank"><i class="bi bi-whatsapp" id="whatsapp"></i></a></li>
+                    </ul>
+                </div><br>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                Anizio T. Lacerda Segurança Eletrônica - Site desenvolvido por Rafael Martins Almeida, Alexandre Ferreira Santos e Marcos Vinícius Sousa Ferreira...
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script para interatividade do site -->
+    <script src="assets/Home/script.js"></script>
+</body>
+</html>

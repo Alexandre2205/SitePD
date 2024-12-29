@@ -1,0 +1,189 @@
+/* Definindo estilos globais para toda a página */
+* {
+  font-family: "Inter", sans-serif; /* Fonte padrão para todo o site */
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove preenchimentos padrão */
+  box-sizing: border-box; /* Inclui bordas e preenchimentos nas dimensões */
+  letter-spacing: 1px; /* Espaçamento entre letras */
+}
+
+
+/* Estilos para o corpo da página */
+body {
+  background-color: #5c656e; /* Cor de fundo para o corpo da página */
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Estilos para a seção de FAQ */
+.faq-container {
+  max-width: 90%; /* Largura máxima do container de FAQ */
+  margin: 50px auto; /* Centraliza o container na página */
+  padding: 20px;
+  background-color: #fff; /* Fundo branco */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.faq-container h1 {
+  text-align: center; /* Centraliza o texto do título */
+  color: #333; /* Cor do texto */
+  margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd; /* Linha separadora entre itens */
+  padding: 10px 0; /* Espaçamento interno */
+  transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+}
+
+.faq-item:last-child {
+  border-bottom: none; /* Remove a linha de borda do último item */
+}
+
+.faq-question {
+  cursor: pointer; /* Mostra que o elemento é clicável */
+  margin: 0;
+  padding: 15px;
+  background-color: #f7f9fc; /* Cor de fundo das perguntas */
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transições suaves */
+}
+
+.faq-question:hover {
+  background-color: #e2e8f0; /* Cor de fundo ao passar o mouse */
+}
+
+.faq-question::after {
+  content: '\002B'; /* Ícone de "+" antes de clicar */
+  font-size: 20px;
+  transition: transform 0.3s ease; /* Transição suave para animação do ícone */
+}
+
+.faq-question.active::after {
+  content: '\2212'; /* Ícone de "-" após clicar (expandido) */
+  transform: rotate(180deg); /* Gira o ícone */
+}
+
+.faq-answer {
+  max-height: 0; /* Inicialmente esconde a resposta */
+  overflow: hidden; /* Esconde conteúdo que excede a altura máxima */
+  transition: max-height 0.5s ease; /* Transição suave para exibir a resposta */
+  margin: 10px 0 0; /* Espaçamento superior da resposta */
+  padding: 0 15px;
+  background-color: #f9fafb; /* Cor de fundo da resposta */
+  border-radius: 5px;
+}
+
+.faq-answer p {
+  margin: 10px 0; /* Espaçamento interno do parágrafo */
+}
+
+.faq-question:hover {
+  color: #007BFF; /* Cor de destaque ao passar o mouse */
+}
+
+/* Estilos para o rodapé */
+footer {
+  background-color: #202035; /* Cor de fundo */
+  padding: 5px 0; /* Preenchimento */
+  width: 100%; /* Largura total */
+  max-width: 100%; /* Largura máxima */
+  color: white; /* Cor do texto */
+  box-sizing: border-box; /* Inclui bordas e preenchimentos */
+}
+
+.footer-container {
+  display: flex; /* Layout flexbox */
+}
+
+.footer-block-left {
+  flex: 1.5; /* Proporção no espaço disponível */
+  padding-top: 10px; /* Preenchimento superior */
+}
+
+.footer-block-left ul li {
+  list-style: none; /* Remove marcadores */
+  padding-top: 0.5rem; /* Espaçamento entre itens */
+}
+
+.footer-block-right {
+  flex: 2; /* Proporção no espaço disponível */
+  padding: 5px; /* Preenchimento interno */
+  text-align: center; /* Centraliza o texto */
+}
+
+.footer-block-left p,
+.footer-block-right p {
+  margin: 0; /* Remove margens */
+}
+
+.footer-bottom {
+  text-align: center; /* Centraliza o texto */
+  margin-top: 10px; /* Margem superior */
+}
+
+.footer-bottom p {
+  margin: 0; /* Remove margens */
+  padding: 5px 0; /* Espaçamento interno */
+  border-top: 1px solid #fff; /* Linha superior */
+}
+
+.social ul {
+  display: flex; /* Layout flexbox */
+  gap: 1rem; /* Espaço entre itens */
+  margin-top: 0.5rem; /* Margem superior */
+  padding-left: 5%; /* Preenchimento à esquerda */
+  list-style: none; /* Remove marcadores */
+  padding-top: 10px;
+}
+
+/* Estilos para ícones das redes sociais */
+.social a #youtube {
+  color: #ff0000; /* Cor do ícone do YouTube */
+  font-size: 2.5rem; /* Tamanho do ícone */
+  border: 1.6px solid (#ff0000); /* Borda */
+  border-radius: 50%; /* Bordas arredondadas */
+  padding: 0.2rem; /* Preenchimento */
+  text-align: center; /* Centraliza o ícone */
+  width: 20px; /* Largura fixa */
+}
+
+.social a:hover #youtube {
+  color: #1f252e; /* Cor ao passar o mouse */
+  background-color: red; /* Fundo ao passar o mouse */
+  box-shadow: 0 0 20px red; /* Sombra ao passar o mouse */
+  transition: all 0.3s ease-in-out; /* Transição suave */
+}
+
+.social a #whatsapp {
+  color: #25d366; /* Cor do ícone do WhatsApp */
+  font-size: 2.5rem; /* Tamanho do ícone */
+  border: 1.6px solid (#25d366); /* Borda */
+  border-radius: 50%; /* Bordas arredondadas */
+  padding: 0.2rem; /* Preenchimento */
+  text-align: center; /* Centraliza o ícone */
+  width: 20px; /* Largura fixa */
+}
+
+.social a:hover #whatsapp {
+  color: #1f252e; /* Cor ao passar o mouse */
+  background-color: #25d366; /* Fundo ao passar o mouse */
+  box-shadow: 0 0 10px #25d366; /* Sombra ao passar o mouse */
+  transition: all 0.3s ease-in-out; /* Transição suave */
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+ 
+  .social ul {
+      padding: 8% 2 1% 27.5%; /* Ajusta o alinhamento dos ícones */
+      padding-top: 200px;
+  }
+  
+}
