@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminPage</title>
+    <style>
+        body {
+       font-family: "Inter", sans-serif; /* Define a fonte padrão */
+       background-color: #f2f2f2; /* Define a cor de fundo */
+       color: #333; /* Define a cor do texto */
+       line-height: 1.6; /* Define o espaçamento entre linhas */
+       }
+       /* Seções da página */
+       section {
+          padding: 20px; /* Espaçamento interno */
+          background-color: white; /* Fundo branco */
+          margin: 20px; /* Margem externa */
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+          text-align: center;
+        }
+
+   </style>
+</head>
+<body>
+    <header>
+        <h1>Pagina de administração</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Adicionar paragrafo</h2>
+            <h3>Adicione o titulo do paragrafo</h3>
+            <textarea placeholder="Titulo" name="tituloparagrafo" id="titulo"></textarea>
+            <h3>Adicione o texto do paragrafo</h3>
+            <textarea placeholder="Adicione texto ao paragrafo" name="TextoParagrafo" id="texto"></textarea>
+            <button>Enviar</button>
+
+            <h2>Editar paragrafo</h2>
+            <h3>Selecione o paragrafo</h3>
+            <select name="titulos" id="listadetitulos">
+                <option value="01">titulo 1</option>
+                <option value="01">titulo 2</option>
+            </select>
+            <h3>Edite o titulo do paragrafo</h3>
+            <textarea placeholder="Titulo" name="tituloparagrafo" id="titulo"></textarea>
+            <h3>Edite o texto do paragrafo</h3>
+            <textarea placeholder="Adicione texto ao paragrafo" name="TextoParagrafo" id="texto"></textarea>
+            <button>Enviar</button>
+
+            <h2>Excluir paragrafo</h2>
+            <h3>Selecione o paragrafo</h3>
+            <select name="titulos" id="listadetitulos">
+                <option value="01">titulo 1</option>
+                <option value="01">titulo 2</option>
+            </select>
+            <button>Excluir</button>
+        </section>
+
+
+
+    </main>
+    
+</body>
+</html>
