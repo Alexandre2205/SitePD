@@ -17,6 +17,7 @@ body {
 header {
     text-align: center; /* Centraliza o texto */
     background-color: #ccc; /* Define a cor de fundo */
+    padding: 10px 20px; /* Define o espaçamento interno */
 }
 
 h1 {
@@ -28,12 +29,6 @@ h1 {
 header h2 {
     font-size: 24px; /* Define o tamanho da fonte */
     color: #000; /* Define a cor do texto */
-}
-
-header {
-  background-color: #ccc; /* Define a cor de fundo */
-  padding: 10px 20px; /* Define o espaçamento interno */
-  text-align: center; /* Centraliza o conteúdo */
 }
 
 /* Estilos para a navegação */
@@ -96,9 +91,14 @@ strong {
     font-weight: bold; /* Destaca o texto */
 }
 
-.contato ul li a{
+#contato ul{
   list-style: none; /* Remove marcadores da lista */
   text-decoration: none; /* Remove sublinhação */
+  text-align: center;
+}
+
+#contato{
+  text-align: center;
 }
 
 /* Estilos para o rodapé */
@@ -190,3 +190,91 @@ footer {
     box-shadow: 0 0 10px #25d366; /* Sombra ao passar o mouse */
     transition: all 0.3s ease-in-out; /* Transição suave */
 }
+
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Coloca os itens de navegação em coluna */
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 5px 0; /* Diminui o espaçamento entre os itens */
+  }
+
+  .robot-img {
+    width: 150px; /* Reduz o tamanho da imagem do robô */
+    position: relative; /* Ajusta o posicionamento */
+    left: 70%; /* Ajusta a posição */
+    top: 5px;
+  }
+
+  section {
+    margin: 10px; /* Ajusta a margem das seções */
+    padding: 15px; /* Ajusta o padding */
+  }
+
+  .card {
+    padding: 30px; /* Diminui o padding da card */
+    max-width: 100%; /* Garante que o conteúdo ocupe 100% da largura */
+  }
+
+  footer .footer-container {
+    flex-direction: column; /* Coloca os itens do footer em coluna */
+    text-align: center;
+  }
+
+  footer .footer-block-left,
+  footer .footer-block-right {
+    flex: 1; /* Define a proporção igual entre os itens */
+    margin-bottom: 20px;
+  }
+
+  footer .footer-bottom p {
+    font-size: 14px; /* Ajusta o tamanho da fonte no rodapé */
+  }
+
+  /* Centralizar os ícones do WhatsApp e YouTube abaixo do texto do rodapé */
+  .social ul {
+    flex-direction: row; /* Coloca os ícones das redes sociais em linha */
+    gap: 1rem; /* Espaço entre os ícones */
+    margin-top: 20px; /* Margem superior para separar do texto */
+    justify-content: center; /* Centraliza os ícones */
+    padding-left: 0; /* Remove o preenchimento à esquerda */
+  }
+
+  .social ul li {
+    margin: 0; /* Remove a margem dos itens */
+  }
+
+  .social a {
+    font-size: 2rem; /* Ajusta o tamanho dos ícones */
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 32px; /* Diminui o tamanho da fonte do título */
+  }
+
+  header h2 {
+    font-size: 18px; /* Diminui o tamanho da fonte do subtítulo */
+  }
+
+  /* Centraliza os ícones do WhatsApp e YouTube no rodapé em telas muito pequenas */
+  .social ul {
+    flex-direction: column; /* Coloca os ícones em coluna */
+    gap: 0.5rem; /* Menor espaço entre os ícones */
+    margin-top: 10px; /* Ajusta a margem superior */
+  }
+
+  .social a {
+    font-size: 2rem; /* Ajusta o tamanho dos ícones */
+  }
+}
+
+
+
+
+

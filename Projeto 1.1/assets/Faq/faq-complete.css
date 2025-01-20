@@ -181,9 +181,58 @@ footer {
 /* Estilos responsivos */
 @media (max-width: 768px) {
  
-  .social ul {
-      padding: 8% 2 1% 27.5%; /* Ajusta o alinhamento dos ícones */
-      padding-top: 200px;
+  footer .footer-container {
+    flex-direction: column; /* Coloca os itens do footer em coluna */
+    text-align: center;
   }
-  
+
+  footer .footer-block-left,
+  footer .footer-block-right {
+    flex: 1; /* Define a proporção igual entre os itens */
+    margin-bottom: 10px;
+  }
+
+  footer .footer-bottom p {
+    font-size: 14px; /* Ajusta o tamanho da fonte no rodapé */
+  }
+
+  /* Centralizar os ícones do WhatsApp e YouTube abaixo do texto do rodapé */
+  .social ul {
+    flex-direction: row; /* Coloca os ícones das redes sociais em linha */
+    gap: 1rem; /* Espaço entre os ícones */
+    margin-top: 20px; /* Margem superior para separar do texto */
+    justify-content: center; /* Centraliza os ícones */
+    padding-left: 0; /* Remove o preenchimento à esquerda */
+  }
+
+  .social ul li {
+    margin: 0; /* Remove a margem dos itens */
+  }
+
+  .social a {
+    font-size: 2rem; /* Ajusta o tamanho dos ícones */
+  } 
 }
+
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 32px; /* Diminui o tamanho da fonte do título */
+  }
+
+  header h2 {
+    font-size: 18px; /* Diminui o tamanho da fonte do subtítulo */
+  }
+
+  /* Centraliza os ícones do WhatsApp e YouTube no rodapé em telas muito pequenas */
+  .social ul {
+    flex-direction: column; /* Coloca os ícones em coluna */
+    gap: 0.5rem; /* Menor espaço entre os ícones */
+    margin-top: 10px; /* Ajusta a margem superior */
+  }
+
+  .social a {
+    font-size: 2rem; /* Ajusta o tamanho dos ícones */
+  }
+}
+
