@@ -50,6 +50,7 @@ nav ul li a {
     text-decoration: none; /* Remove a sublinhação */
     background-color: #ddd; /* Define a cor de fundo */
     border-radius: 5px; /* Arredonda as bordas */
+    
 }
 
 nav ul li a.active, nav ul li a:hover {
@@ -90,6 +91,7 @@ section {
 strong {
     font-weight: bold; /* Destaca o texto */
 }
+
 
 #contato ul{
   list-style: none; /* Remove marcadores da lista */
